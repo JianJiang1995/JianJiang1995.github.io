@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jian Jiang - Academic Homepage</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="nav-inner">
+      <a href="#" class="nav-name">Jian Jiang</a>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#awards">Awards</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <!-- ====== ABOUT ====== -->
+  <section id="about" class="profile-section">
+    <div class="profile-left">
+      <div class="avatar-placeholder">
+        <!-- Replace src with your photo -->
+        <img src="assets/photo.jpg" alt="Jian Jiang" onerror="this.style.display='none'; this.parentNode.querySelector('.avatar-fallback').style.display='flex';">
+        <div class="avatar-fallback" style="display:none;">J</div>
+      </div>
+      <h1>Jian Jiang <span class="cn-name">(姜键)</span></h1>
+      <p class="title">Postdoctoral Researcher</p>
+      <p class="affiliation">Shanghai Jiao Tong University</p>
+      <div class="contact-icons">
+        <a href="mailto:jian.jiang@kcl.ac.uk" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/jianjiangkcl" title="GitHub"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+    <div class="profile-right">
+      <p>
+        I am a Postdoctoral Researcher at Shanghai Jiao Tong University, working with Prof. Yutong Ban.
+        I obtained my Ph.D. from King's College London (KCL) in 2024, supervised by
+        <a href="https://nms.kcl.ac.uk/oya.celiktutan/">Prof. Oya Celiktutan</a>.
+      </p>
+      <h3>Research Interests</h3>
+      <p>
+        Large Language/Vision Models, Surgical AI, Parameter-Efficient Transfer Learning, Model Compression,
+        Incremental/Continual Learning, Multimodal Learning, Computer Vision, Affective Computing, Model Fairness, Medical Image Analysis.
+      </p>
+      <h3>Education</h3>
+      <ul class="edu-list">
+        <li><strong>Ph.D.</strong> in Deep Learning / Computer Vision, King's College London, 2019 – 2024</li>
+        <li><strong>M.Sc.</strong> in Artificial Intelligence (<em>Distinction</em>), King's College London, 2018 – 2019</li>
+        <li><strong>B.Sc.</strong> in Software Engineering, Wuhan University of Science and Technology, 2014 – 2018</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ====== NEWS ====== -->
+  <section id="news">
+    <h2>News</h2>
+    <div class="news-list">
+      <div class="news-item">
+        <span class="news-date">Mar 2025</span>
+        <span class="news-text">
+          <a href="https://arxiv.org/abs/2603.12430">Surg-R1</a> is released &mdash; a hierarchical reasoning surgical VLM achieving 57.7% Arena Score, outperforming GPT-5.1 (28.5%) and Gemini 3.0 Pro (29.8%) on surgical benchmarks.
+        </span>
+      </div>
+      <div class="news-item">
+        <span class="news-date">Jan 2025</span>
+        <span class="news-text">
+          <a href="https://arxiv.org/abs/2501.00525">Systematic evaluation of SAM in surgical video analysis</a> is available on arXiv.
+        </span>
+      </div>
+      <div class="news-item">
+        <span class="news-date">2024</span>
+        <span class="news-text">Joined Shanghai Jiao Tong University as a Postdoctoral Researcher.</span>
+      </div>
+      <div class="news-item">
+        <span class="news-date">2024</span>
+        <span class="news-text">Paper on incremental bias mitigation accepted by <em>IEEE Transactions on Affective Computing</em> (IF: 9.6).</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== PUBLICATIONS ====== -->
+  <section id="publications">
+    <h2>Selected Publications</h2>
+    <p class="pub-note">* denotes equal contribution.</p>
+
+    <div class="pub-year">2025</div>
+
+    <div class="pub-item">
+      <div class="pub-title">Surg-R1: A Hierarchical Reasoning Foundation Model for Scalable and Interpretable Surgical Decision Support with Multi-Center Clinical Validation</div>
+      <div class="pub-authors"><strong>Jian Jiang</strong>*, Chenxi Lin*, Yiming Gu, Zengyi Qin, Zhitao Zeng, Kun Yuan, Yonghao Long, Xiang Xia, Cheng Yuan, Yuqi Wang, Zijie Yue, Kunyi Yang, Yuting Zhang, Zhu Zhuo, Dian Qin, Xin Wang, NG Chi Fai, Brian Anthony, Daguang Xu, Guy Rosman, Ozanan Meireles, Zizhen Zhang, Nicolas Padoy, Hesheng Wang, Qi Dou, Yueming Jin, and Yutong Ban</div>
+      <div class="pub-venue">arXiv preprint arXiv:2603.12430, 2025</div>
+      <div class="pub-links">
+        <a href="https://arxiv.org/abs/2603.12430"><i class="fas fa-file-pdf"></i> Paper</a>
+        <a href="https://jianjiangkcl.github.io/Surg-R1/"><i class="fas fa-globe"></i> Project Page</a>
+      </div>
+    </div>
+
+    <div class="pub-item">
+      <div class="pub-title">Systematic Evaluation and Guidelines for Segment Anything Model in Surgical Video Analysis</div>
+      <div class="pub-authors">Cheng Yuan, <strong>Jian Jiang</strong>, Kunyi Yang, et al.</div>
+      <div class="pub-venue">arXiv preprint arXiv:2501.00525, 2025</div>
+      <div class="pub-links">
+        <a href="https://arxiv.org/abs/2501.00525"><i class="fas fa-file-pdf"></i> Paper</a>
+      </div>
+    </div>
+
+    <div class="pub-year">2024</div>
+
+    <div class="pub-item">
+      <div class="pub-title">Towards Generalised and Incremental Bias Mitigation in Personality Computing</div>
+      <div class="pub-authors"><strong>Jian Jiang</strong>, V. Manoranjan, H. Salam, Oya Celiktutan</div>
+      <div class="pub-venue">IEEE Transactions on Affective Computing, 2024 <span class="pub-badge">IF: 9.6</span></div>
+      <div class="pub-links">
+        <a href="https://www.computer.org/csdl/journal/ta/5555/01/10549797/1Xx59qXqjq8"><i class="fas fa-file-pdf"></i> Paper</a>
+      </div>
+    </div>
+
+    <div class="pub-year">2023</div>
+
+    <div class="pub-item">
+      <div class="pub-title">Neural Weight Search for Scalable Task Incremental Learning</div>
+      <div class="pub-authors"><strong>Jian Jiang</strong>, Oya Celiktutan</div>
+      <div class="pub-venue">IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), 2023</div>
+      <div class="pub-links">
+        <a href="https://arxiv.org/abs/2211.13823"><i class="fas fa-file-pdf"></i> Paper</a>
+      </div>
+    </div>
+
+    <div class="pub-item">
+      <div class="pub-title">Generalised Bias Mitigation for Personality Computing</div>
+      <div class="pub-authors"><strong>Jian Jiang</strong>, V. Manoranjan, H. Salam, Oya Celiktutan</div>
+      <div class="pub-venue">Proceedings of the 1st International Workshop on Multimodal and Responsible Affective Computing (MRAC), 2023</div>
+      <div class="pub-links">
+        <a href="https://dl.acm.org/doi/10.1145/3607865.3616175"><i class="fas fa-file-pdf"></i> Paper</a>
+      </div>
+    </div>
+
+    <div class="pub-year">2022</div>
+
+    <div class="pub-item">
+      <div class="pub-title">Learning Personalised Models for Automatic Self-Reported Personality Recognition</div>
+      <div class="pub-authors">H. Salam, V. Manoranjan*, <strong>Jian Jiang</strong>*, Oya Celiktutan</div>
+      <div class="pub-venue">Proceedings of Machine Learning Research (PMLR), 2022</div>
+      <div class="pub-links">
+        <a href="https://proceedings.mlr.press/v173/salam22a"><i class="fas fa-file-pdf"></i> Paper</a>
+      </div>
+    </div>
+
+    <div class="pub-year">2021</div>
+
+    <div class="pub-item">
+      <div class="pub-title">IB-DRR: Incremental Learning with Information-Back Discrete Representation Replay</div>
+      <div class="pub-authors"><strong>Jian Jiang</strong>, Edoardo Centin, Oya Celiktutan</div>
+      <div class="pub-venue">CVPR Workshop on Continual Learning, 2021</div>
+      <div class="pub-links">
+        <a href="https://arxiv.org/abs/2104.10588"><i class="fas fa-file-pdf"></i> Paper</a>
+      </div>
+    </div>
+
+    <div class="pub-year">2017</div>
+
+    <div class="pub-item">
+      <div class="pub-title">Action Prediction based on Dense Trajectory and Dynamic Image</div>
+      <div class="pub-authors"><strong>Jian Jiang</strong>, Chunhua Deng, Xiangming Cheng</div>
+      <div class="pub-venue">Chinese Automation Congress (CAC), 2017</div>
+      <div class="pub-links">
+        <a href="https://ieeexplore.ieee.org/document/8242944"><i class="fas fa-file-pdf"></i> Paper</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== EXPERIENCE ====== -->
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="exp-list">
+      <div class="exp-item">
+        <div class="exp-period">2024 – Present</div>
+        <div class="exp-detail">
+          <div class="exp-role">Postdoctoral Researcher</div>
+          <div class="exp-org">Shanghai Jiao Tong University</div>
+          <div class="exp-desc">Collaborator: Prof. Yutong Ban (National Young Talent)</div>
+        </div>
+      </div>
+      <div class="exp-item">
+        <div class="exp-period">2024</div>
+        <div class="exp-detail">
+          <div class="exp-role">AIGC Researcher</div>
+          <div class="exp-org">LiblibAI</div>
+          <div class="exp-desc">Mentor: Zhibo Chen (Chief AI Scientist, LiblibAI)</div>
+        </div>
+      </div>
+      <div class="exp-item">
+        <div class="exp-period">2023 – 2024</div>
+        <div class="exp-detail">
+          <div class="exp-role">Research Assistant</div>
+          <div class="exp-org">King's College London &amp; Tongji University</div>
+          <div class="exp-desc">Collaborator: Prof. Miaojing Shi (Tongji University, National Young Talent)</div>
+        </div>
+      </div>
+      <div class="exp-item">
+        <div class="exp-period">2019 – 2022</div>
+        <div class="exp-detail">
+          <div class="exp-role">Teaching Assistant</div>
+          <div class="exp-org">King's College London</div>
+          <div class="exp-desc">Courses: Computer Vision, Pattern Recognition, Bio-Inspired Methods, Random Variables &amp; Stochastic Processes</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== AWARDS ====== -->
+  <section id="awards">
+    <h2>Awards &amp; Honors</h2>
+    <div class="awards-grid">
+      <div class="award-category">
+        <h3>Grants &amp; Funding</h3>
+        <ul>
+          <li>NVIDIA Academic Hardware Grant (PI), 2022</li>
+          <li>EPSRC (Engineering and Physical Sciences Research Council, UK) Funding</li>
+        </ul>
+      </div>
+      <div class="award-category">
+        <h3>Competitions</h3>
+        <ul>
+          <li><strong>International Champion</strong>, Autonomous Navigation, International Humanoid Robot Olympics, 2017</li>
+          <li><strong>International Runner-up</strong> &times; 2, Simulated Robot Soccer (Large &amp; Medium Groups), FIRA Robot World Cup, 2017</li>
+          <li><strong>First Prize</strong>, Humanoid Robot Obstacle Course, International Humanoid Robot Olympics, 2017</li>
+        </ul>
+      </div>
+      <div class="award-category">
+        <h3>Academic</h3>
+        <ul>
+          <li>Outstanding Graduation Thesis, WUST, 2018</li>
+          <li>First-Class Scholarship &amp; Outstanding Student, WUST, 2015 – 2018</li>
+        </ul>
+      </div>
+      <div class="award-category">
+        <h3>Professional Certification</h3>
+        <ul>
+          <li><strong>System Analyst</strong> (Senior Level), certified by Ministry of Human Resources and Social Security &amp; MIIT, PRC</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Jian Jiang. Last updated: March 2025.</p>
+</footer>
+
+</body>
+</html>
