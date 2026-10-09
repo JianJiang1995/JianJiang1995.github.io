@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jian Jiang - Academic Homepage</title>
+  <script src="language.js" defer></script>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,6 +23,7 @@
         <li><a href="#experience">Experience</a></li>
         <li><a href="#awards">Awards</a></li>
       </ul>
+      <button id="language-toggle" type="button" title="Switch to Chinese" aria-label="Switch to Chinese"><i class="fas fa-language" aria-hidden="true"></i> Language <span id="language-label">中文</span></button>
     </div>
   </nav>
 </header>
@@ -67,6 +69,10 @@
   <section id="news">
     <h2>News</h2>
     <div class="news-list">
+      <div class="news-item">
+        <span class="news-date">Sep 2026</span>
+        <span class="news-text"><a href="https://openreview.net/forum?id=aFYphrxbNI">LITHE</a> is accepted at <strong>NeurIPS 2026 (Poster)</strong>. Lattice-indexed encoding enables compact diffusion personalization adapters and over 10,000 adapters co-resident on a single A100 80 GB GPU.</span>
+      </div>
       <div class="news-item">
         <span class="news-date">Mar 2026</span>
         <span class="news-text">
@@ -126,6 +132,16 @@
       <div class="pub-links">
         <a href="https://arxiv.org/abs/2603.12430"><i class="fas fa-file-pdf"></i> Paper</a>
         <a href="https://jianjiang1995.github.io/Surg-R1/"><i class="fas fa-globe"></i> Project Page</a>
+      </div>
+    </div>
+
+    <div class="pub-item">
+      <div class="pub-title">LITHE: Lattice-Indexed Twin Hadamard Encoding for Diffusion Personalization</div>
+      <div class="pub-authors"><strong>Jian Jiang</strong>, Oya Celiktutan, Yaohui Wang, Yutong Ban</div>
+      <div class="pub-venue">Advances in Neural Information Processing Systems (NeurIPS), 2026 <span class="pub-badge">Poster</span></div>
+      <div class="pub-links">
+        <a href="https://openreview.net/forum?id=aFYphrxbNI"><i class="fas fa-external-link-alt"></i> OpenReview</a>
+        <a href="https://openreview.net/pdf?id=aFYphrxbNI"><i class="fas fa-file-pdf"></i> Paper</a>
       </div>
     </div>
 
@@ -292,7 +308,7 @@
 </main>
 
 <footer>
-  <p>&copy; 2026 Jian Jiang. Last updated: March 2026.</p>
+  <p>&copy; 2026 Jian Jiang. Last updated: October 2026.</p>
 </footer>
 
 </body>
