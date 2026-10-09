@@ -16,12 +16,12 @@
       '<strong>学士</strong>，软件工程，武汉科技大学，2014–2018'
     ],
     '#news h2': ['最新动态'],
-    '.news-date': ['2026年9月', '2026年3月', '2026年3月', '2026年3月', '2025年12月', '2024年', '2024年'],
+    '.news-date': ['2026年9月', '2026年9月', '2026年3月', '2026年3月', '2025年12月', '2024年', '2024年'],
     '.news-text': [
       '<a href="https://openreview.net/forum?id=aFYphrxbNI">LITHE</a> 已被 <strong>NeurIPS 2026（Poster）</strong>录用。基于格索引的编码实现紧凑的扩散模型个性化适配器，在单张 A100 80 GB GPU 上支持逾10,000个适配器共存。',
+      '<a href="https://papers.miccai.org/miccai-2026/0925-Paper5377.html">SCISSR</a> 正式发表于 <strong>MICCAI 2026</strong>。<a href="https://papers.miccai.org/miccai-2026/paper/5377_paper.pdf">Camera Ready 正式版论文</a>已在会议官方开放获取论文集中发布。',
       '<a href="https://arxiv.org/abs/2603.16822">Surg&Sigma;</a> 发布：面向手术智能的大规模多模态数据与基础模型体系，覆盖6个临床专科、18项手术任务及逾598万条对话。',
       '<a href="https://arxiv.org/abs/2603.12430">Surg-R1</a> 发布：具有层级推理能力的手术视觉语言模型，Arena Score 达57.7%，在手术基准上超过 GPT-5.1（28.5%）与 Gemini 3.0 Pro（29.8%）。',
-      '<a href="https://arxiv.org/abs/2603.18544">SCISSR</a> 发布：支持涂鸦提示的交互式手术场景分割框架，在 EndoVis 2018 和 CholecSeg8k 上分别取得95.41%和96.30%的 Dice。',
       '<a href="https://arxiv.org/abs/2501.00525">手术视频分析中 Segment Anything 模型的系统评估与使用指南</a> 被 <em>NPJ Digital Surgery</em> 录用。',
       '加入上海交通大学，任博士后研究员。',
       '关于增量偏见消除的论文被 <em>IEEE Transactions on Affective Computing</em> 录用（IF：9.6）。'
@@ -29,9 +29,9 @@
     '#publications h2': ['代表性论文'],
     '.pub-note': ['* 表示共同第一作者 / 同等贡献。'],
     '.pub-title': [
+      'LITHE：面向扩散模型个性化的格索引双 Hadamard 编码',
       'Surg&Sigma;：面向手术智能的大规模多模态数据与基础模型体系',
       'Surg-R1：面向可扩展、可解释手术决策支持的层级推理基础模型及多中心临床验证',
-      'LITHE：面向扩散模型个性化的格索引双 Hadamard 编码',
       'SCISSR：基于涂鸦条件的交互式手术分割与精细化',
       '手术视频分析中 Segment Anything 模型的系统评估与使用指南',
       '人格计算中的泛化与增量偏见消除',
@@ -42,10 +42,10 @@
       '基于密集轨迹与动态图像的行为预测'
     ],
     '.pub-venue': [
+      '神经信息处理系统大会（NeurIPS），2026 <span class="pub-badge">Poster · 已录用</span>',
       'arXiv 预印本 arXiv:2603.16822，2026',
       'arXiv 预印本 arXiv:2603.12430，2026',
-      '神经信息处理系统大会（NeurIPS），2026 <span class="pub-badge">Poster · 已录用</span>',
-      'arXiv 预印本 arXiv:2603.18544，2026',
+      '医学图像计算与计算机辅助干预国际会议（MICCAI），2026，第503–513页',
       'NPJ Digital Surgery，2025',
       'IEEE Transactions on Affective Computing，2024',
       'IEEE/CVF 计算机视觉应用冬季会议（WACV），2023',
@@ -91,7 +91,7 @@
     document.title = chinese ? '姜键 - 个人学术主页' : 'Jian Jiang - Academic Homepage';
     entries.forEach(entry => { entry.node.innerHTML = entry[next]; });
     links.forEach(({ node, en }) => {
-      node.innerHTML = chinese ? en.replace('Project Page', '项目主页').replace('Paper', '论文') : en;
+      node.innerHTML = chinese ? en.replace('Project Page', '项目主页').replace('Camera Ready', '正式版 PDF').replace('Paper', '论文') : en;
     });
     document.getElementById('language-label').textContent = chinese ? 'EN' : '中文';
     button.title = chinese ? 'Switch to English' : 'Switch to Chinese';
